@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+header{
+    width: 100vw;
+    height: 15vh;
+    display: flex;
+    background: #1e1e1e;
+}
+main{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/img/Background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer{
+    width: 100vw;
+    height: 10vh;
+    background: #1e1e1e;
+}
+
+.IconWrapper{
+    height: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LinksWrapper{
+    height: 100%;
+    width: 25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Content{
+    width: 100vw;
+    height: 80vh;
+}
+
+.LinksWrapper a{
+    font-size: 1.2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+.LinksWrapper a:hover{
+    color: #db7500;
+}
+.IconWrapper img{
+    width: 70%;
+    aspect-ratio: 1/1;
+}
+h1{
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.Selected{
+    text-decoration: underline !important;
+}
