@@ -13,21 +13,39 @@ header{
     display: flex;
     background: #1e1e1e;
 }
-main{
+main {
+    position: relative;
     width: 100vw;
     height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+}
+main::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: url(/img/Background.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: brightness(50%);
+    z-index: -1;
 }
 footer{
     width: 100vw;
-    height: 10vh;
-    background: #1e1e1e;
+    height: 5vh;
+    background: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: white;
 }
 
 .IconWrapper{
@@ -47,7 +65,13 @@ footer{
 }
 .Content{
     width: 100vw;
-    height: 80vh;
+    background: #1e1e1e;
+    height: 90vh;
+}
+.FlexContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .LinksWrapper a{
@@ -66,6 +90,55 @@ h1{
     font-size: 3.5rem;
     font-weight: 600;
     color: #ffffff;
+}
+
+.HammingHistoryWrapper{
+    width: 80%;
+    height: 80%;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+}
+.ImagePart{
+    height: 100%;
+    width: 33.3333%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TextPart{
+    height: 100%;
+    width: 66.6666%;
+}
+
+.ImagePart img{
+    width: 75%;
+    height: 70%;
+    border-radius: 1rem;
+    border: 3px solid #db7500;
+}
+.TextPart h2{
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.NameWrapper{
+    width: 100%;
+    height: 13%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.TextPart p{
+    color: white;
+    font-size: 1.3rem;
+    margin: 1rem 0 1rem 0;
+}
+strong{
+    font-weight: bold !important;
 }
 
 .Selected{
