@@ -23,8 +23,74 @@
     <main>
         <h1>Hammingův kód</h1>
     </main>
-    <div class="Content">
+    <div class="Content ContentTwoParts">
+        <div class="TextPartWrapper">
+            <div class="SectionWrapper"><h2>Co je Hammingův kód?</h2></div>
+            <div class="TextWrapper"><p>Hammingův kód je kód pro detekci a opravu chyb používaný v digitální komunikaci a ukládání dat. Vynalezl ho Richard Hamming v roce 1950, aby zvýšil spolehlivost přenosu dat tím, že umožňuje automatickou detekci a opravu chyb. Hammingův kód přidává redundantní bity k původním datům, což umožňuje přijímači identifikovat a opravit chyby na úrovni jednotlivých bitů.</p></div>
+        </div>
+        <div class="TextPartWrapper">
+            <div class="SectionWrapper"><h2>Jak Hammingův kód funguje</h2></div>
+            <div class="TextWrapper">
+                <p>Hammingův kód využívá kontrolní bity umístěné na specifických pozicích v binární sekvenci dat. Tyto kontrolní bity jsou vypočítávány na základě hodnot ostatních bitů v sekvenci. Pokud dojde k chybě, přijímač může určit, který bit je chybný, a opravit ho.</p>
+                <p>Klíčové pojmy:</p>
+                <ul>
+                    <li>Datové bity: Původní informace určené k přenosu.</li>
+                    <li>Kontrolní bity: Dodatečné bity pro detekci a opravu chyb.</li>
+                    <li>Redundance: Přidané informace zvyšující spolehlivost přenosu.</li>
+                    <li>Syndrom: Binární hodnota sloužící k nalezení chyby v přijatých datech.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Content FlexContent">
+        <div class="FullPartContent">
+            <div class="SectionWrapper"><h2>Použití Hammingova kódu v praxi</h2></div>
+            <div class="TextWrapper">
+                <p>Hammingův kód se používá v různých oblastech, kde je potřeba spolehlivý přenos dat. Mezi nejčastější aplikace patří:</p>
+                
+                <p style="margin-top: 1rem;">1. Datová komunikace</p>
+                <p>Hammingův kód se používá v síťových protokolech k zajištění integrity dat během přenosu. Pomáhá detekovat a opravovat chyby v paketech odesílaných přes nespolehlivé sítě.</p>
 
+                <p style="margin-top: 1rem;">2. Počítačová paměť (ECC RAM)</p>
+                <p>Paměti s opravou chyb (ECC RAM) využívají Hammingův kód k detekci a opravě chyb v operační paměti počítače. To zvyšuje stabilitu systému a zabraňuje pádům způsobeným poškozením dat v paměti.</p>
+                
+                <p style="margin-top: 1rem;">3. Satelitní a vesmírná komunikace</p>
+                <p>Hammingův kód je klíčový pro přenos dat ve vesmíru, kde dochází k poruchám způsobeným kosmickým zářením. Pomáhá zajistit přesnost informací odesílaných mezi kosmickými sondami a Zemí.</p>
+
+                <p style="margin-top: 1rem;">4. QR kódy a čárové kódy</p>
+                <p>Některé technologie čárových a QR kódů využívají Hammingův kód k ověření a opravě chyb při skenování, čímž zajišťují spolehlivé načtení dat.</p>
+            </div>
+        </div>
+    </div>
+    <div class="Content ContentTwoParts">
+        <div class="TextPartWrapper">
+            <div class="SectionWrapper"><h2>Příklad Hammingova kódu (7,4)</h2></div>
+            <div class="TextWrapper">
+                <p>Běžnou implementací je Hammingův kód (7,4), kde:</p>
+                <ul>
+                    <li>4 datové bity obsahují užitečnou informaci.</li>
+                    <li>3 kontrolní bity slouží k opravě chyb.</li>
+                    <li>Výsledný 7bitový kód dokáže detekovat a opravit chyby jednoho bitu.</li>
+                </ul>
+                <p>Například pro datové bity D1 D2 D3 D4 jsou kontrolní bity P1, P2, P3 vypočítány následovně:</p>
+                <ul>
+                    <li>P1 kontroluje bity 1, 2 a 4</li>
+                    <li>P2 kontroluje bity 1, 3 a 4</li>
+                    <li>P3 kontroluje bity 2, 3 a 4</li>
+                </ul>
+                <p>Díky tomu může přijímač efektivně odhalit a opravit chyby.</p>
+            </div>
+        </div>
+        <div class="TextPartWrapper">
+            <div class="SectionWrapper"><h2>Omezení Hammingova kódu</h2></div>
+            <div class="TextWrapper">
+                <p>Přestože je Hammingův kód účinný pro opravu jednobitových chyb, má určitá omezení:</p>
+                <ul>
+                    <li>Nedokáže opravit vícebitové chyby, pokud není rozšířen (např. Hamming(8,4)).</li>
+                    <li>Pro vyšší spolehlivost se používají složitější kódy, jako jsou Reed-Solomon nebo BCH kódy.</li>
+                </ul>
+            </div>
+        </div>
     </div>
     <footer>
         <p>© 2025 Martin Perout. All rights reserved.</p>
