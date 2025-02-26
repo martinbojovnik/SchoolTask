@@ -51,7 +51,7 @@ function SwitchStates(){
                 Bitp[i].textContent = ""
                 classSwitch(Bit[i], 0)
             }
-            ContentText.textContent = "Zmackni dalsi pro ukazku"
+            ContentText.textContent = "Zmáčkni další pro ukázku."
             break;
         case 1:
             for (var i = 0; i < 16; i++){
@@ -65,7 +65,7 @@ function SwitchStates(){
             Bitp[4].textContent = ""
             Bitp[8].textContent = ""
 
-            ContentText.textContent = "Zapiseme data"
+            ContentText.textContent = "Zapíšeme data"
 
             break;
         case 2:
@@ -80,7 +80,7 @@ function SwitchStates(){
             classSwitch(Bit[4], 1)
             classSwitch(Bit[8], 1)
 
-            ContentText.textContent = "Pripravime Humminguv kod"
+            ContentText.textContent = "Připravíme Hammingův kód"
             break;
         case 3:
             for (var i = 0; i < 16; i++){
@@ -91,7 +91,7 @@ function SwitchStates(){
             classSwitch(Bit[13], 2)
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Zpusobime chybu"
+            ContentText.textContent = "Způsobíme chybu"
             break;
         case 4:
             for (var i = 0; i < 16; i++){
@@ -111,7 +111,7 @@ function SwitchStates(){
 
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Zkontrolujeme 2 a 4 sloupec pomoci Bitu 1 0. zde dojde k chybe"
+            ContentText.textContent = "Zkontrolujeme 2. a 4. sloupec pomocí bitu 1 0. Zde dojde k chybě."
             break;
         case 5:
             for (var i = 0; i < 16; i++){
@@ -131,7 +131,7 @@ function SwitchStates(){
 
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Zkontrolujeme 3 a 4 sloupec pomoci Bitu 2 0. zde nedojde k chybe"
+            ContentText.textContent = "Zkontrolujeme 3. a 4. sloupec pomocí bitu 2 0. Zde nedojde k chybě."
             break;
         case 6:
             for (var i = 0; i < 16; i++){
@@ -151,7 +151,7 @@ function SwitchStates(){
 
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Zkontrolujeme 2 a 4 radek pomoci Bitu 0 1. zde dojde k chybe"
+            ContentText.textContent = "Zkontrolujeme 2. a 4. řádek pomocí bitu 0 1. Zde dojde k chybě."
             break;
         case 7:
             for (var i = 0; i < 16; i++){
@@ -171,7 +171,7 @@ function SwitchStates(){
 
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Zkontrolujeme 3 a 4 radek pomoci Bitu 0 1. zde dojde k chybe"
+            ContentText.textContent = "Zkontrolujeme 3. a 4. řádek pomocí bitu 0 1. Zde dojde k chybě."
             break;
         case 8:
             for (var i = 0; i < 16; i++){
@@ -191,7 +191,7 @@ function SwitchStates(){
 
             Bitp[13].textContent = 0
 
-            ContentText.textContent = "Jsme schopni definovat chibny bit na polohu 1 4"
+            ContentText.textContent = "Jsme schopni definovat chybný bit na pozici 1 4."
             break;
     }
 }
