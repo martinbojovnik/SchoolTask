@@ -189,10 +189,71 @@ h1{
     margin: 1rem 0 1rem 0;
 }
 
+.GridWrapperWrapper{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.GridWrapper{
+    height: 90%;
+    aspect-ratio: 1/1;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ExampleButtonWrapper{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.Bit{
+    background: #1a1a1a;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Bit p{
+    color: white;
+    font-size: 2rem;
+}
+.NextPrew{
+    width: 10rem;
+    height: 70%;
+    background: none;
+    color: white;
+    border: #fff 1px solid;
+    border-radius: 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.NextPrew:hover{
+    color: #db7500;
+    border: #db7500 1px solid;
+}
+#ContentPrompt{
+    color: white;
+    font-size: 1.2rem;
+}
+
 strong{
     font-weight: bold !important;
 }
 
 .Selected{
     text-decoration: underline !important;
+}
+
+.BitN{
+    border: #fff 1px solid;
+}
+.BitG{
+    border: #06ac00 1px solid;
+}
+.BitR{
+    border: #a70000 1px solid;
 }
